@@ -1,7 +1,186 @@
-body {
-    font-family: 'Cormorant Garamond', serif;
-  }
 
 h1 {
-    font-family: 'Bebas Neue', cursive;
-}
+  font-family: Bebas Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  color: rgb(0,0,0);
+  text-align: center;
+  }
+  
+  .heroh1 {
+    margin: 10px;
+  }
+  
+  h2 {
+  font-family: Bebas Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  color: rgb(25,114,120);
+  }
+  
+  
+  .sub-headline {
+  font-family: Bebas Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  color: rgb(0,0,0);
+  }
+  
+  .CTA {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32pt;
+    background-color: rgb(251,90,56);
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  body {
+    font-family: Cormorant Garamond, Times New Roman, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(0,0,0);
+    text-align: left;
+    }
+  
+  #heroGrid {
+    margin: 0px 10%;
+    padding: 10px;
+    display: grid;
+    min-height: 220px;
+    min-width: 400px;
+    height: 200vh;
+    grid-template-rows: 30% 5% 15% 5% 15% 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "heroimage heroimage"
+    "volunteer_img volunteer_header"
+    "volunteer_img volunteer"
+    "donate_header donate_img"
+    "donate donate_img"
+    "testimonial testimonial";
+  }
+  
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    margin: 15px;
+  }
+  
+  #headline {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50px;
+    padding: 15px;
+    max-width: 450px;
+    z-index: 200;
+    align-items: center;
+  }
+  
+  #heroimage {
+    grid-area: heroimage;
+    background-image: url("../images/prisoners.jpg");
+    border-radius: 32pt;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  #herotext {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  #volunteer_img {
+    grid-area: volunteer_img;
+    background-image: url("../images/volunteer_2.PNG");
+    border-radius: 32pt;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  #volunteer_header {
+    grid-area: volunteer_header;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  #volunteer {
+    grid-area: volunteer;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    text-align: left;
+    max-height: 300px;
+    max-width: 100%;
+  }
+  
+  #donate_header {
+    grid-area: donate_header;
+    text-align: right;
+    align-items: flex-start;
+  }
+  
+  #donate {
+    grid-area: donate;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  
+  #donate_img {
+    grid-area: donate_img;
+    background-image: url("../images/donatefunds.jpg");
+    border-radius: 32pt;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+  
+    #heroGrid {
+      grid-template-rows: 15% 12% 15% 5% 15% 15% 5% 15%;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "heroimage"
+      "heroimage"
+      "volunteer_img"
+      "volunteer_header"
+      "volunteer"
+      "donate_img"
+      "donate_header"
+      "donate";
+    }
+  }
