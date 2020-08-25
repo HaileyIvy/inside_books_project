@@ -1,0 +1,77 @@
+#toggle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32pt;
+    background-color: rgb(251,90,56);
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+
+.nav {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32pt;
+    background-color: rgb(237,229,224);
+    color: rgb(25,114,120);
+    padding: 10px;
+    font-weight: 500;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+.dropdownButton {
+    text-decoration: none;
+    color: rgb(25,114,120);
+    transition-duration: .5s;
+  }
+
+.dropdownButton:hover {
+    background-color: rgb(25,114,120);
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+#dropDown {
+    display: none;
+    border: none;
+    text-decoration: none;
+  }
+
+.nav a {
+    color: rgb(25,114,120);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 auto;
+    width: 200px;
+    padding: 0px;
+}
+  
+ul {
+    margin:0;
+    padding: 0;
+    list-style-type:none;
+  }
+
+li {
+    margin:0;
+    padding: 15px;
+    }
+
+img {
+    width: 30px;
+    padding: 5px;
+    }
