@@ -1,0 +1,60 @@
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+header {
+  background-color: #393E40;
+}
+
+img {
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 310px;
+}
+
+input {
+  height: 15px;
+  margin-top: 40px;
+}
+
+.active {
+  background-color: rgb(251, 90, 56);
+}
+
+.nav-link {
+  margin: 30px;
+  padding: 10px 15px 10px 15px;
+  font-family: Bebas Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.nav-link:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-top: 2px solid rgb(251, 90, 56);
+  text-decoration: none;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
