@@ -2,29 +2,24 @@
 <html>
 <head>
   <link href="css/styles-hailey.css" rel="stylesheet" type="text/css">
-  <link href="css/styles-deenah.css" rel="stylesheet" type="text/css">
-  <link href="css/buttonstyle.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Monoton&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&display=swap" rel="stylesheet"> 
   <title>Inside Books Project</title>
 </head>
 <header>
   <div class="top-container">
     <!--logo here-->
-    <a href="index.html"><img src="./images/header_logo.png" /></a>
-    <input type="text">
+    <a href="index.html"><img src="./images/header_logo.png" width="500px"/></a>    <input type="text">
   </div>
   <div class="container">
     <a class="nav-link active" href="index.html">Home</a>
     <a class="nav-link" href="about.html">About</a>
     <a class="nav-link" href="#">Volunteer</a>
-    <div id="toggle">Donate <img src="images/downArrow.png"></div>
-  <ul id="dropDown">
-  <li class="nav"><div class="dropdownButton"><a href="">Donate Books</a></div></li>
-  <li class="nav"><div class="dropdownButton"><a href="">Donate Funds</a></div></li>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/index.js"></script>
+    <div id="toggle">Donate <img src="images/downArrow.png">
+      <ul id="dropDown">
+      <li class="nav"><div class="dropdownButton"><a href="">Donate Books</a></div></li>
+      <li class="nav"><div class="dropdownButton"><a href="">Donate Funds</a></div></li>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="js/index.js"></script>  </div>
     <a class="nav-link" href="#">Resource Guide</a>
     <a class="nav-link" href="#">Contact</a>
   </div>
@@ -33,9 +28,71 @@
 <section id="heroGrid">
   <div id="heroimage" class="heroGridArea">
     <div id="headline">
-      <h1 class="heroh1">What We Do</h1>
-      <div id="herotext">IBP receives written requests from inmates for books and educational materials, we then select and ship books to them.</div>
-      <div class="CTA"><a href="">Learn More</a></div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <h1 class="heroh1">What We Do</h1>
+          <div id="herotext">IBP receives written requests from inmates for books and educational materials, we then select and ship books to them.</div>
+          <div class="CTA"><a href="about.html">Learn More</a></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <h1 class="heroh1">Why We Do It</h1>
+          <div id="herotext">We believe that every prisoner has the right to quality reading and educational materials.</div>
+          <div class="CTA"><a href="about.html">Learn More</a></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <h1 class="heroh1">How We Do It</h1>
+          <div id="herotext">We rely upon our volunteers and community to generously donate their time, books, and money towards our mission!</div>
+          <div class="CTA"><a href="about.html">Learn More</a></div>
+        </div>
+
+        <div class="mySlides fade">
+          <h1 class="heroh1">History</h1>
+          <div id="herotext">IBP was founded in 1998 and has always been a community- focused and volunteer-run organization.</div>
+          <div class="CTA"><a href="about.html">Learn More</a></div>
+        </div>
+        
+     
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
     </div>
   </div>
   <div id="volunteer_img" class="heroGridArea"></div>
@@ -52,5 +109,51 @@
     </body>
     <div id="donate_img" class="heroGridArea"></div>
     </div>
-</section>
+  <div id="testimonial" class="heroGridArea">
+    <div id="quote">
+      <div class="slideshow-container">
+        "I am so very glad that scrap of paper with your address on it came to me. You brought light into a desperately dim and dingy world. God bless you and your works." <div id="author">— Kenneth J,
+        Inmate in Texas</div></div>
+        
+        <div class="mySlides fade">I requested educational books from Inside Books Project. I thank Inside Books Project for helping me to become a better person through self-learning.</div>
+        
+        <div class="mySlides fade">I’m locked in a maximum security prison and confined to my cell 23 hours a day. Inside Books Project makes it possible for me to read books I can’t get from my prison library.
+        </div>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+              </div>
+          </section>
 </html>

@@ -1,4 +1,106 @@
 
+header {
+  background-color: #393E40;
+}
+
+img {
+  height: auto;
+  margin: auto;
+}
+
+input {
+  display: flex;
+  height: 20px;
+  width: 300px;
+  margin-top: 40px;
+  justify-items: flex-start;
+}
+
+.active {
+  background-color: rgb(251, 90, 56);
+}
+
+.nav-link {
+  display: flex;
+  font-family: Bebas Neue, sans-serif;
+  padding: 10px 15px 10px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30pt;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-link:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  border-top: 2px solid rgb(251, 90, 56);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-top: 2px solid rgb(251, 90, 56);
+  text-decoration: none;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 h1 {
   font-family: Bebas Neue, sans-serif;
   font-style: normal;
@@ -62,7 +164,6 @@ h1 {
     margin: 0px 10%;
     padding: 10px;
     display: grid;
-    min-height: 220px;
     min-width: 400px;
     height: 200vh;
     grid-template-rows: 30% 5% 15% 5% 15% 15%;
@@ -96,6 +197,37 @@ h1 {
     z-index: 200;
     align-items: center;
   }
+
+  #quote {
+    text-align: left;
+    margin: 20px;
+    padding: 5px;
+    font-family: Cormorant Garamond, Times New Roman, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    color: rgb(25,114,120);
+  }
+
+  #author {
+    font-family: Cormorant Garamond, Times New Roman, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    color: rgb(25,114,120);
+    text-align: right;
+  }
+
+  .myslides {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: Cormorant Garamond, Times New Roman, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    color: rgb(25,114,120);
+  }
   
   #heroimage {
     grid-area: heroimage;
@@ -103,6 +235,17 @@ h1 {
     border-radius: 32pt;
     justify-content: space-around;
     text-align: center;
+  }
+
+  #testimonial {
+    grid-area: testimonial;
+    background-color: #EDE5E0;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 32pt;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 0px;
   }
   
   #herotext {
@@ -154,6 +297,78 @@ h1 {
     text-align: center;
     position: relative;
   }
+
+  #toggle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32pt;
+    text-align: center;
+    background-color: rgb(251,90,56);
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    width: 250px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    justify-items: center;
+    text-decoration: none;
+  }
+
+.nav {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32pt;
+    background-color: rgb(237,229,224);
+    color: rgb(25,114,120);
+    padding: 10px;
+    font-weight: 500;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+.dropdownButton {
+  margin: 0 auto;
+    text-decoration: none;
+    color: rgb(25,114,120);
+    transition-duration: .5s;
+  }
+
+.dropdownButton:hover {
+    background-color: rgb(25,114,120);
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+#dropDown {
+    display: none;
+    border: none;
+    text-decoration: none;
+  }
+
+.nav a {
+    color: rgb(25,114,120);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 auto;
+    width: 200px;
+    padding: 0px;
+}
+  
+ul {
+    margin:0;
+    padding: 0;
+    list-style-type:none;
+  }
+
+li {
+    margin:0;
+    padding: 15px;
+    }
+
   
   @media only screen and (max-width: 1000px) {
     #navigation {
@@ -164,14 +379,14 @@ h1 {
     }
   }
   
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1000px) {
     #headline {
       position: static;
       margin: 20px;
     }
   
     #heroGrid {
-      grid-template-rows: 15% 12% 15% 5% 10% 15% 5% 10%;
+      grid-template-rows: 15% 12% 15% 5% 10% 15% 5% 10% 20% ;
       grid-template-columns: 1fr;
       grid-template-areas:
       "heroimage"
@@ -181,6 +396,7 @@ h1 {
       "volunteer"
       "donate_img"
       "donate_header"
-      "donate";
+      "donate"
+      "testimonial";
     }
   }
