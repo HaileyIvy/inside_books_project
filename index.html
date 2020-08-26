@@ -3,6 +3,8 @@
 <head>
   <link href="css/styles-hailey.css" rel="stylesheet" type="text/css">
   <link href="css/styles-deenah.css" rel="stylesheet" type="text/css">
+  <link href="css/buttonstyle.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Monoton&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&display=swap" rel="stylesheet"> 
   <title>Inside Books Project</title>
 </head>
@@ -16,7 +18,13 @@
     <a class="nav-link active" href="index.html">Home</a>
     <a class="nav-link" href="about.html">About</a>
     <a class="nav-link" href="#">Volunteer</a>
-    <a class="nav-link" href="#">Donate</a>
+    <div id="toggle">Donate <img src="images/downArrow.png"></div>
+  <ul id="dropDown">
+  <li class="nav"><div class="dropdownButton"><a href="">Donate Books</a></div></li>
+  <li class="nav"><div class="dropdownButton"><a href="">Donate Funds</a></div></li>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/index.js"></script>
     <a class="nav-link" href="#">Resource Guide</a>
     <a class="nav-link" href="#">Contact</a>
   </div>
