@@ -7,24 +7,41 @@
 </head>
 <header>
   <div class="top-container">
-    <!--logo here-->
-    <a href="index.html"><img src="./images/header_logo.png" width="500px"/></a>    <input type="text">
-  </div>
-  <div class="container navbar">
-    <a class="nav-link active" href="index.html">Home</a>
-    <a class="nav-link" href="about.html">About</a>
-    <a class="nav-link" href="#">Volunteer</a>
-    <div id="toggle">Donate <img src="images/downArrow.png">
-      <ul id="dropDown">
-      <li class="nav"><div class="dropdownButton"><a href="">Donate Books</a></div></li>
-      <li class="nav"><div class="dropdownButton"><a href="">Donate Funds</a></div></li>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="js/index.js"></script>  </div>
-    <a class="nav-link" href="#">Resource Guide</a>
-    <a class="nav-link" href="#">Contact</a>
+    <a href="index.html"><img src="./images/header_logo.png" width="500px"/></a>
+      <input type="text" placeholder="Search.."><br></div>
+      <div class="container">
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Donate
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">Donate Books</a>
+        <a href="#">Donate Funds</a></div></div>
+        <a href="#">Resource Guide</a>
+        <a href="#">Contact</a>
+    </div>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
   </div>
 </header>
-
 <section id="heroGrid">
   <div id="heroimage" class="heroGridArea">
     <div id="headline">
