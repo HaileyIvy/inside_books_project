@@ -18,3 +18,7 @@ function myFunction() {
       }
   }
 }
+
+$( function() {
+  $( "#tabs" ).tabs();
+} );

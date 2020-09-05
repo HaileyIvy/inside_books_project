@@ -211,6 +211,10 @@ h1 {
   color: rgb(25,114,120);
   }
   
+  #testimonial_header {
+    grid-area: testimonial_header;
+  margin: auto;
+  }
   
   .sub-headline {
   font-family: Bebas Neue, sans-serif;
@@ -255,7 +259,7 @@ h1 {
     display: grid;
     min-width: 400px;
     height: 200vh;
-    grid-template-rows: 30% 5% 15% 5% 15% 15%;
+    grid-template-rows: 30% 5% 15% 5% 15% 5% 20%;
     grid-template-columns: 50% 50%;
     grid-template-areas:
     "heroimage heroimage"
@@ -263,6 +267,7 @@ h1 {
     "volunteer_img volunteer"
     "donate_header donate_img"
     "donate donate_img"
+    "testimonial_header testimonial_header"
     "testimonial testimonial";
   }
   
@@ -287,9 +292,9 @@ h1 {
     align-items: center;
   }
 
-  #quote {
+  .quote {
     text-align: left;
-    margin: 20px;
+    margin: 10px;
     padding: 5px;
     font-family: Cormorant Garamond, Times New Roman, serif;
     font-style: italic;
@@ -298,7 +303,7 @@ h1 {
     color: rgb(25,114,120);
   }
 
-  #author {
+  .author {
     font-family: Cormorant Garamond, Times New Roman, serif;
     font-style: normal;
     font-weight: 300;
@@ -457,8 +462,83 @@ li {
     margin:0;
     padding: 15px;
     }
-
   
+
+
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+        float: center;
+        padding: .5em 1em;
+        text-decoration: none;
+    }
+
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+      float: center;
+      padding: .5em 1em;
+      text-decoration: none;
+  }
+    .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+        text-decoration: none;
+        font-family: Bebas Neue, sans-serif;
+        font-size: 30pt;
+        color: white;
+        background-color: rgb(25,114,120);
+        border-radius: 32pt;
+    }
+
+    #tabs a:hover {
+      background-color: rgb(11, 69, 73);
+    }
+    
+    .ui-tabs .ui-tabs-nav li {
+        display: inline-block;
+        list-style: none;
+        float: center;
+        top: 15;
+        margin: 1px .2em 0 0;
+        border-bottom-width: 0;
+        padding: 15;
+        border-radius: 32pt;
+    }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+        border: 0;
+        font-weight: normal;
+        color: #454545;
+    }
+
+    li {
+        text-align: -webkit-match-parent;
+    }
+    .ui-widget-header {
+        border: 0;
+        background: #EDE5E0;
+        font-weight: bold;
+    }
+    .ui-helper-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        line-height: 1.3;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+    .ui-widget-content {
+        display: inline-block;
+        background:  #EDE5E0;
+        color: #333333;
+        padding: 15px;
+        border-radius: 32pt;
+    }
+    .ui-widget {
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 1em;
+    }
+
   @media only screen and (max-width: 1000px) {
     .top-container {
       display: inline-block;
@@ -479,7 +559,7 @@ li {
     }
   
     #heroGrid {
-      grid-template-rows: 15% 12% 15% 5% 10% 15% 5% 10% 20% ;
+      grid-template-rows: 15% 12% 15% 5% 10% 15% 5% 10% 5% 30%;
       grid-template-columns: 1fr;
       grid-template-areas:
       "heroimage"
@@ -490,6 +570,76 @@ li {
       "donate_img"
       "donate_header"
       "donate"
+      "testimonial_header"
+      "testimonial";
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+  
+    #heroGrid {
+      grid-template-rows: 15% 12% 15% 5% 10% 15% 5% 10% 5% 30%;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "heroimage"
+      "heroimage"
+      "volunteer_img"
+      "volunteer_header"
+      "volunteer"
+      "donate_img"
+      "donate_header"
+      "donate"
+      "testimonial_header"
+      "testimonial";
+    }
+  }
+
+ @media only screen and (max-width: 800px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+  
+    #heroGrid {
+      grid-template-rows: 15% 12% 15% 5% 10% 15% 5% 10% 10% 40%;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "heroimage"
+      "heroimage"
+      "volunteer_img"
+      "volunteer_header"
+      "volunteer"
+      "donate_img"
+      "donate_header"
+      "donate"
+      "testimonial_header"
+      "testimonial";
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+  
+    #heroGrid {
+      grid-template-rows: 15% 12% 15% 5% 10% 15% 5% 10% 10% 45%;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "heroimage"
+      "heroimage"
+      "volunteer_img"
+      "volunteer_header"
+      "volunteer"
+      "donate_img"
+      "donate_header"
+      "donate"
+      "testimonial_header"
       "testimonial";
     }
   }

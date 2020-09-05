@@ -3,6 +3,12 @@
 <head>
   <link href="css/styles-hailey.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Monoton&display=swap" rel="stylesheet"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <title>Inside Books Project</title>
 </head>
 <header>
@@ -110,51 +116,27 @@
     </body>
     <div id="donate_img" class="heroGridArea"></div>
     </div>
-  <div id="testimonial" class="heroGridArea">
-    <div id="quote">
-      <div class="slideshow-container">
-        "I am so very glad that scrap of paper with your address on it came to me. You brought light into a desperately dim and dingy world. God bless you and your works." <div id="author">— Kenneth J,
-        Inmate in Texas</div></div>
-        
-        <div class="mySlides fade">I requested educational books from Inside Books Project. I thank Inside Books Project for helping me to become a better person through self-learning.</div>
-        
-        <div class="mySlides fade">I’m locked in a maximum security prison and confined to my cell 23 hours a day. Inside Books Project makes it possible for me to read books I can’t get from my prison library.
-        </div>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-          </script>
+    <div id="testimonial_header" class="heroGridArea"><h2>Testimonials</h2></div>
+    <div id="testimonial" class="heroGridArea">
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Kenneth J.</a></li>
+        <li><a href="#tabs-2">Miguel A.</a></li>
+        <li><a href="#tabs-3">James W.</a></li>
+      </ul>
+      <div id="tabs-1">
+        <div class="quote">"I am so very glad that scrap of paper with your address on it came to me. You brought light into a desperately dim and dingy world. God bless you and your works."</div><div class="author">— Kenneth J.,
+          Inmate in Texas</div>
+      </div>
+      <div id="tabs-2">
+        <div class="quote">"With no funds, no mail from the outside world and a long wait for educational classes, I requested educational books from Inside Books Project. I thank Inside Books Project for helping me to become a better person through self-learning."</div><div class="author">— Miguel A.,
+          Inmate in Texas</div>
+      </div>
+      <div id="tabs-3">
+        <div class="quote">"I’m locked in a maximum security prison and confined to my cell 23 hours a day. Inside Books Project makes it possible for me to read books I can’t get from my prison library."</div><div class="author">— James W.,
+          Inmate in Texas</div>
+      </div>
+    </div>
               </div>
           </section>
 </html>
