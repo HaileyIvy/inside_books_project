@@ -1,7 +1,91 @@
-body {
-    font-family: 'Cormorant Garamond', serif;
-  }
-
-h1 {
-    font-family: 'Bebas Neue', cursive;
+.about-title {
+  /* margin: 0 auto; */
+  margin-top: 30px;
+  text-align: center;
 }
+
+.timeline {
+  margin-top: 50px;
+  /* width: 1000%; */
+  /* width: 1200px;
+  height: 400px; */
+  height: 100%;
+  width: 100%;
+  margin-right: 0;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: white;
+}
+
+.main-paragraphs {
+  font-size: 20px;
+}
+
+.timeline image {
+  margin-left: 300px;
+
+/* align-items: center; */
+
+}
+
+.container1 {
+  /* width: 100%; */
+  padding: 0 15px;
+  margin: 0 5%;
+}
+
+#table {
+  margin-top: 600px;
+  padding: 200px;
+  text-align: center;
+}
+
+#row1 {
+
+  text-align: center;
+
+}
+
+#row1col1 {
+  margin-top: 450px;
+  width: 500px;
+  text-align: center;
+
+}
+
+#row1col2 {
+  margin-top: 450px;
+  width: auto;
+  text-align: center;
+}
+
+#col1header {
+  text-align: center;
+}
+
+#col2header {
+  text-align: center;
+}
+
+.top-paragraph {
+  margin-top: 100px;
+}
+
+.bottom-paragraph {
+  margin-top: 140px;
+}
+
+.class-three {
+  font-family: 'bebas', cursive;
+}
+
+
+
+
+
+
+
+
+
